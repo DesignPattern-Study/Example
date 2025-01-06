@@ -3,7 +3,7 @@
  * 사용, 복사, 변경, 제3자에의 공개, 배포는 엄격히 금지되며, (주)씨알에스큐브의 지적 재산권 침해에 해당됩니다.
  * Copyright ⓒ 2024. CRScube Co., Ltd. All Rights Reserved| Confidential)
  */
-package dokdogalmaegi.decorator
+package dokdogalmaegi.decorator.coffee
 
 /**
  * Created by ljy on 12/23/24.

@@ -3,17 +3,11 @@
  * 사용, 복사, 변경, 제3자에의 공개, 배포는 엄격히 금지되며, (주)씨알에스큐브의 지적 재산권 침해에 해당됩니다.
  * Copyright ⓒ 2024. CRScube Co., Ltd. All Rights Reserved| Confidential)
  */
-package dokdogalmaegi.decorator
+package dokdogalmaegi.decorator.validator
 
 /**
  * Created by ljy on 12/23/24.
  */
-class MilkDecorator(private val coffee: Coffee): Coffee by coffee {
-    override fun cost(): Int = coffee.cost() + 500
-    override fun description(): String = coffee.description() + ", Milk"
-}
-
-class SugarDecorator(private val coffee: Coffee): Coffee by coffee {
-    override fun cost(): Int = coffee.cost() + 300
-    override fun description(): String = coffee.description() + ", Sugar"
+interface Validator {
+    fun validate(value: String): Boolean
 }
